@@ -1,0 +1,18 @@
+body{
+    background: yellow;
+}
+
+
+/* min-width: 767px */
+@media screen and (min-width: 767px) {
+    body{
+        background: blue;
+    }
+} /* //min-width: 767px */
+
+/* min-width: 1023px */
+@media screen and (min-width: 1023px) {
+    body{
+        background: white;
+    }
+} /* //min-width: 1023px */
