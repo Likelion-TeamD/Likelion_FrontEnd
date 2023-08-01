@@ -48,9 +48,6 @@ body{
     height: 60px;
 }
 
-.hamburgerLogo img{
-    height: 60px;
-}
 
 .menuButton {
     /* constraint와 비슷 */
@@ -68,6 +65,58 @@ body{
     background: transparent;
     border: none;
 }
+
+
+
+/* 헴버거 메뉴 */
+
+.hamburgerCloseButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    background-color: aliceblue;
+}
+
+
+.hamburgerHeader{
+    position: relative;
+    height: 60px;
+}
+
+.hamburgerLogo{
+    padding-left: 20px;
+}
+
+.hamburgerLogo img{
+    height: 60px;
+}
+
+.hamburgerPageLinkArea{
+    padding: 24px 20px 9px;
+}
+
+.hamburgerPageLinkTitle{
+    /* block inline 차이 */
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background: green;
+    border: 1px solid blue;
+}
+.hamburgerPageLinkItem{
+    position: relative;
+    display: block;
+    /* 상 우 하 좌 */
+    padding: 13px 24px 13px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    background: yellow;
+    border: 1px solid red;
+}
+
 
 .hamburgerMenu {
     position: fixed;
