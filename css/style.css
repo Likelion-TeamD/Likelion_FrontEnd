@@ -39,13 +39,30 @@ body{
     left: 0;
     right: 0;
     height: 60px;
-    background: #fff;
+    background: yellow;
     border-bottom: 1px solid #e9e9e9;
     text-align: center;
 }
 
 .mainLogo img{
     height: 60px;
+}
+
+.menuButton {
+    /* constraint와 비슷 */
+    position: absolute;
+
+    /* z-index : 요소 겹칠때 순서*/
+    z-index: 100;
+
+    /* margin top 과 비슷 */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    /* 배경 사라지게 하는법 */
+    background: transparent;
+    border: none;
 }
 
 
