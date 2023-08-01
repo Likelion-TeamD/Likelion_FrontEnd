@@ -39,12 +39,16 @@ body{
     left: 0;
     right: 0;
     height: 60px;
-    background: yellow;
+    background: #fff;
     border-bottom: 1px solid #e9e9e9;
     text-align: center;
 }
 
 .mainLogo img{
+    height: 60px;
+}
+
+.hamburgerLogo img{
     height: 60px;
 }
 
@@ -63,6 +67,31 @@ body{
     /* 배경 사라지게 하는법 */
     background: transparent;
     border: none;
+}
+
+.hamburgerMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background: rgba(0,0,0,0.5);
+}
+
+/* 우리 플젝에 참고! */
+.hamburgerMenuInner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 322px;
+    background: #fff;
+}
+
+
+.content {
+    margin: 84px 24px 24px;
 }
 
 
