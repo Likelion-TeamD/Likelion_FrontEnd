@@ -76,7 +76,6 @@ body{
     right: 20px;
     background: transparent;
     border: none;
-    background-color: aliceblue;
 }
 
 
@@ -91,6 +90,7 @@ body{
 
 .hamburgerLogo img{
     height: 60px;
+    width: 230px;
 }
 
 .hamburgerPageLinkArea{
@@ -102,8 +102,6 @@ body{
     display: block;
     margin-bottom: 10px;
     font-size: 18px;
-    background: green;
-    border: 1px solid blue;
 }
 .hamburgerPageLinkItem{
     position: relative;
@@ -113,22 +111,24 @@ body{
     font-size: 15px;
     font-weight: 500;
     color: #222;
-    background: yellow;
-    border: 1px solid red;
 }
 
+/* 화살표 이미지 */
 .hamburgerPageLinkItem::after{
     content: '';
     position: absolute;
+    /* height의 절반 */
     top: 50%;
+    margin-top: -12px;
     right: 0;
     width: 24px;
     height: 24px;
-    margin-top: -12px;
-    background-image: ;
+    background-image: url(/img/nextbtn.svg)
 }
 
 .hamburgerMenu {
+    /* 처음에는 가려져 있음 */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -146,6 +146,16 @@ body{
     bottom: 0;
     width: 322px;
     background: #fff;
+    /* y축은 자동 scroll */
+    /* x방향 스크롤은 안생겨야 하므로 hidden */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* 스크롤바 안보이게 하기 */
+.hamburgerMenuInner::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 
 
