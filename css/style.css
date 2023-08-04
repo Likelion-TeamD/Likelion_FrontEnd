@@ -321,7 +321,26 @@ body {
 }
 
 .content {
-  margin: 84px 24px 24px;
+  padding: 84px 24px 24px;
+}
+
+.home{
+  margin-top: 40px;
+}
+
+.home .title{
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.home img{
+  width: 100%;
+  /* rounding 처리 */
+  border-radius : 12px;
+  /* stroke 처리
+  border: 2px solid red */
 }
 
 .mainNavibar {
@@ -339,6 +358,13 @@ body {
   color: #222;
 }
 
+.footer {
+  border-top: 1px solid #e9e9e9;
+  font-size: 12px;
+  pad: 24px;
+}
+
+/* =============================================== */
 /* min-width: 767px */
 @media screen and (min-width: 767px) {
   .menuButton {
@@ -374,6 +400,11 @@ body {
   }
 } /* //min-width: 1023px */
 
+
+
+
+/* --------------------------------------------- */
+/* 다른 css */
 .box {
   border: 0px none;
   height: 1031px;
