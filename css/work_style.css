@@ -1,0 +1,85 @@
+/* body{
+    background: aqua;
+} */
+
+
+.profileDetail{
+    margin-top: 40px;
+}
+
+/* .item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */
+
+
+.profileDetail .formArea .title{
+    position: relative;
+    display: block;
+    margin-bottom: 23px;
+    font-size: 18px;
+}
+.profileDetail .formArea .label{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    color: #999;
+}
+
+.profileDetail .formArea .cont{
+    position: relative;
+    display: block;
+    padding: 12px 0 20px 8px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 15px;
+}
+/* forArea사이에 오는 간격 */
+.profileDetail .formArea ~ .formArea{
+    margin-top: 40px;
+}
+
+.profileDetail .item ~ .item{
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 767px) {
+   
+    .content {
+      padding: 25px 50px 24px;
+    }
+   
+    .profileDetail .formArea .item{
+        position: relative;
+        min-height: 60px;
+        padding: 0 0 0 212px;
+        border-bottom: 1px solid #e9e9e9;
+    }
+    .profileDetail .formArea .title + .item {
+        border-top: 2px solid #222;
+    }
+    .profileDetail .formArea .item ~ .item {
+        margin-top: 0;
+    }
+
+    .profileDetail .formArea .label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 180px;
+        background: #f9fbfb;
+        box-sizing: border-box;
+        font-size: 15px;
+        line-height: 60px;
+        white-space: nowrap;
+        text-indent: 24px;
+        color: #222;
+    }
+
+    /* 화면이 커졌을대 boder-bottom을 없앰 */
+    .profileDetail .formArea .cont{
+        padding: 21px 0;
+        border-bottom: none;
+    }
+  }
+  /* //min-width: 767px */

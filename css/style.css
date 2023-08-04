@@ -324,27 +324,27 @@ body {
   padding: 84px 24px 24px;
 }
 
-.home{
+.home {
   margin-top: 40px;
 }
 
-.home .title{
+.home .title {
   margin-bottom: 20px;
   font-size: 15px;
   font-weight: normal;
   text-align: center;
 }
 
-.home img{
+.home img {
   width: 100%;
   /* rounding 처리 */
-  border-radius : 12px;
+  border-radius: 12px;
   /* stroke 처리
   border: 2px solid red */
 }
 
 .mainNavibar {
-  display:none;
+  display: none;
   margin-top: 14px;
   font-size: 0;
 }
@@ -364,6 +364,32 @@ body {
   pad: 24px;
 }
 
+.workList .thumbnail {
+  display: block;
+  height: 300px;
+  border-radius: 12px;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+}
+
+.workList .title {
+  display: block;
+  padding: 0 8px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
+
+.workList .date {
+  display: block;
+  margin-top: 4px;
+  padding: 0 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  color: #999;
+}
+
 /* =============================================== */
 /* min-width: 767px */
 @media screen and (min-width: 767px) {
@@ -373,7 +399,6 @@ body {
   .mainHeader {
     height: 120px;
     text-align: left;
-    background: lightgreen;
   }
   .mainHeader .inner {
     padding: 0 50px;
@@ -386,22 +411,66 @@ body {
   }
   .mainNavibar {
     /* 무조건 보이게 */
-    display:block;
+    display: block;
     margin-top: 14px;
     font-size: 0;
+  }
+
+  .workList {
+    font-size: 0;
+  }
+  .workList .item {
+    display: inline-block;
+    width: calc(50%-10px);
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  .workList .item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .workList .thumbnail{
+    height: 200px;
+  }
+
+  .workList .title {
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .workList .date {
+    margin-top: 8px;
+    font-size: 14px;
   }
 }
 /* //min-width: 767px */
 
 /* min-width: 1023px */
 @media screen and (min-width: 1023px) {
-  body {
-    background: white;
+  .workList .thumbnail{
+    height: 300px;
   }
+  .workList .item {
+    display: inline-block;
+    width: calc(30%-10px);
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  .workList .item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  
 } /* //min-width: 1023px */
 
-
-
+.max-w-sm {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 100px;
+}
 
 /* --------------------------------------------- */
 /* 다른 css */
@@ -409,6 +478,7 @@ body {
   border: 0px none;
   height: 1031px;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: 333px;
 }
 

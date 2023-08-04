@@ -8,6 +8,8 @@
   <!-- jquery호출 -->
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/ui.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <title>about</title>
 </head>
 
@@ -19,26 +21,31 @@
     </script>
   </header>
 
-  <div class="wrap">
-    <div class="box">
-      <div class="group">
-        <div class="overlap-group">
-          <div class="rectangle">
-            <img class="img" alt="Rectangle" />
-            <img class="ellipse" alt="Ellipse" />
-            <h1 class="text-wrapper">성이름</h1>
-            <div class="div">010-1234-5678</div>
-          </div>
-          <div class="rectangle-2">
-            <img class="jam-write" alt="Jam write" />
-          </div>
-        </div>
-      </div>
+  <section id="content" class="content">
+    <div class="workList">
+      <a href="#" class="item">
+        <span class="thumbnail" style="background-image: url('https://api.time.com/wp-content/uploads/2021/02/laptop-home-office.jpg');"></span>
+        <strong class="title">포트폴리오 사이트 구측</strong>
+        <span class="date">2023.07.07</span>
+      </a>
     </div>
-  </div>
+    <div class="workList">
+      <a href="#" class="item">
+        <span class="thumbnail" style="background-image: url('https://api.time.com/wp-content/uploads/2021/02/laptop-home-office.jpg');"></span>
+        <strong class="title">포트폴리오 사이트 구측</strong>
+        <span class="date">2023.07.07</span>
+      </a>
+    </div>
+    <div class="workList">
+      <a href="#" class="item">
+        <span class="thumbnail" style="background-image: url('https://api.time.com/wp-content/uploads/2021/02/laptop-home-office.jpg');"></span>
+        <strong class="title">포트폴리오 사이트 구측</strong>
+        <span class="date">2023.07.07</span>
+      </a>
+    </div>
+  </section>
 
-
-  <!-- <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <section class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
       <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
     </a>
@@ -58,12 +65,12 @@
             d="M1 5h12m0 0L9 1m4 4L9 9" />
         </svg>
       </a>
-    </div> -->
-  </div>
+    </div>
+  </section>
 
   <footer id="footer" class="footer">
     <script>
-      $('footer').load('/include/footer.html')
+      $('#footer').load('/include/footer.html')
     </script>
   </footer>
 </body>
