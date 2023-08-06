@@ -549,10 +549,7 @@ video {
   --my-green: #00b890;
 }
 
-.nav-item {
-}
-
-.guest {
+.guestEx {
   color: var(--my-green);
   font-size: 20px;
 }
