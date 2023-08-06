@@ -17,6 +17,9 @@ var hamburgerCloseButton = document.getElementById("hamburgerCloseButton")
 hamburgerCloseButton.addEventListener("click", toggleHamburgerMenu);
 
 
+
+
+
 // // menuButton.addEventListener("click", function () {
 // //     var hamburgerMenu = document.getElementById("hamburgerMenu");
 // //     hamburgerMenu.style.display = "block";
