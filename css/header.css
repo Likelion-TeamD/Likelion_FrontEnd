@@ -1,0 +1,29 @@
+/* .nav-item {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-item.active
+   {
+    color: #00A884;
+    /* background-color: #ECFDF5; */
+  }
+  
+  .dark .nav-item.active,
+  .dark .nav-item:hover {
+    color: #00A884;
+    background-color: #4B5563;
+  }
+  
+  /* Optional styling for dark mode */
+  .dark {
+    background-color: #1F2937;
+    color: #D1D5DB;
+  }
+  
+  .dark .nav-item {
+    color: #D1D5DB;
+  }
+   */
