@@ -106,11 +106,11 @@
         <main id="content" class="content">
             <!-- // content -->
             <!-- Wide center column -->
-            <main class="flex wrapper mx-auto">
+            <main class="wrapper flex mx-auto">
                 <!-- 좌측 -->
-                <aside id="left_card"  class="w-[22%] bg-gray-500 h-screen mr-4">
+                <aside id="left_card" class="w-[22%] h-screen mr-4">
                     <!-- 내부카드 -->
-                    <div class="w-full rounded-[20px] h-[70%] overflow-hidden shadow-lg bg-[#FAFAFA]">
+                    <div class="w-full rounded-[20px] h-full overflow-hidden shadow-lg bg-[#FAFAFA]">
                         <div class="px-6 py-4">
                             <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
                             <p class="text-gray-700 text-base">
@@ -132,9 +132,9 @@
                 </aside>
 
                 <!-- 가운데 -->
-                <section  id="center_card" class="center_card bg-gray-400 h-screen">
-                    <!-- card -->
-                    <div  class="w-full h-screen rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
+                <section  id="center_card" class="center_card  h-screen">
+                    <!-- picture -->
+                    <div id="picture"  class="picture w-full h-[70%] rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
                         <div class="px-6 py-4">
                             <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
                             <p class="text-gray-700 text-base">
@@ -143,21 +143,24 @@
                                 et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                    </div>
+                    <!-- 방명록 -->
+                    <div id="guest_book"  class="guest_book w-full h-[35%] rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                                Maiores
+                                et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
                         </div>
                     </div>
                 </section>
 
                 <!-- 우측 -->
-                <aside id="right_card" class="w-[26%] bg-gray-500 h-screen ml-4">
-                    <!-- 내부 card -->
-                    <div class="w-full h-[50%] rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
+                <aside id="right_card" class="w-[26%]  h-screen ml-4">
+                    <!-- 이웃목록 -->
+                    <section id="neighbor" class="neighbor w-full h-[50%] rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
                         <div class="px-6 py-4">
                             <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
                             <p class="text-gray-700 text-base">
@@ -174,7 +177,27 @@
                             <span
                                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
                         </div>
-                    </div>
+                    </section>
+
+                    <!-- 최근인기상품 -->
+                    <section id="hot_product" class="hot_product w-full h-[73%] rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                                Maiores
+                                et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                        </div>
+                    </section>
                 </aside>
             </main>
 
