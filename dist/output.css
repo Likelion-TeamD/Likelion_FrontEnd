@@ -570,21 +570,37 @@ body {
   background: linear-gradient(#f6f6f6, #d3deda);
 }
 
-
-
 .content {
   /* overflow-y: hidden; */
   /* height: 100%; */
- 
-  height: calc(100vh - var(--navbar-height));
-  /* height: 100%; */
+
+  padding: 32px 0;
+  /* height: calc(100vh - var(--navbar-height)); */
+  height: 100%;
   /* background: linear-gradient(#f6f6f6, #d3deda); */
 }
 
-.height-cal{
-  height: calc(100vh - var(--navbar-height));
+.wrapper {
+  /* height: calc(100vh - var(--navbar-height)); */
   /* margin: 0 auto; */
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   height: 100%;
+  width: 80%;
+}
+
+.center_card {
+  width: 52%;
+}
+
+@media screen and (max-width: 768px) {
+  .center_card,
+  .content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #left_card,
+  #right_card {
+    display: none;
+  }
 }
