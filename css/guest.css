@@ -1,7 +1,14 @@
-.picture ~ .guest_book{
-    margin-top: 29px;
+.picture ~ .guest_book {
+  margin-top: 29px;
 }
 
-.neighbor ~ .hot_product{
-    margin-top: 29px;
+.neighbor ~ .hot_product {
+  margin-top: 29px;
 }
+
+/* .img_item {
+  width: 25%;
+  border-radius: 5px;
+  margin-right: 0.75rem;
+} */
+
