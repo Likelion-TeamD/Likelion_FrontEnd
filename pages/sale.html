@@ -21,36 +21,71 @@
 </head>
 
 <body>
-
     <div class="wrap">
-      
-         <!-- header -->
-         <header id="header" class="header">
+
+        <!-- header -->
+        <header id="header" class="header">
             <script>
                 $('#header').load('/include/header.html')
             </script>
         </header>
         <!-- // header -->
 
-         <!-- content -->
-         <main id="content" class="content">
-            <!-- // content -->
-            <section class="sales">
-                <h1>판매중인 상품 화면</h1>
-            </section>
+        <!-- content -->
+        <div class="wrapping">
+            <main id="content" class="content">
 
-        </main>
+                <!-- // content -->
+                <!-- Wide center column -->
+                <main class="wrapper flex mx-auto">
 
-        <!-- footer -->
-        <!-- <footer id="footer" class="footer">
-            <script>
-                $('#footer').load('/include/footer.html')
-            </script>
-        </footer> -->
-        <!-- // footer -->
+                    <!-- 좌측 -->
+                    <aside id="left_card" class="w-[22%] h-screen mr-4">
+                        <script>
+                            $('#left_card').load('/include/left.html')
+                        </script>
+                    </aside>
+
+                    <!-- to지현 여기서부터 작성! -->
+                    <section id="center_card" class="center_card  h-screen">
+                        <!-- picture -->
+                        <div id="picture"
+                            class="picture w-full h-screen rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
+                            <!-- picture 영역 padding 적용 -->
+                            <div class="px-6 py-5">
+                                <div class="font-bold text-xl mb-3">판매중인 상품</div>
+                                
+                            </div>
+                        </div>
+                    
+                    </section>
+
+                    <!-- 우측 -->
+                    <aside id="right_card" class="w-[26%]  h-full ml-4">
+
+                        <!-- 이웃목록 -->
+                        <section id="neighbor" class="neighbor">
+                            <script>
+                                $('#neighbor').load('/include/right.html')
+                            </script>
+                        </section>
+
+                        <!-- 최근인기상품 -->
+                        <section id="hot_product" class="hot_product">
+                            <script>
+                                $('#hot_product').load('/include/right_bottom.html')
+                            </script>
+                        </section>
+
+
+                    </aside>
+                </main>
+
+            </main>
+        </div>
 
     </div>
-
 </body>
+
 
 </html>
