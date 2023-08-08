@@ -4,20 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sale</title>
+    <title>Document</title>
 
-    <!-- css 호출 -->
-    <link rel="stylesheet" href="/dist/output.css">
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
 
-    <!-- tailwind css 호출 -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Elements styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
-    <!-- jquery호출 -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
+    <!-- Tailwind CSS config -->
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
 
-    <!-- js 호출 -->
     <script src="/js/ui.js"></script>
-
 </head>
 
 <body>
@@ -46,14 +59,14 @@
                         </script>
                     </aside>
 
-                    <!-- to지현 여기서부터 작성! -->
+                    <!-- to김지현 여기서부터 작성! -->
                     <section id="center_card" class="center_card  h-screen">
                         <!-- picture -->
                         <div id="picture"
                             class="picture w-full h-screen rounded-[20px] overflow-hidden shadow-lg bg-[#FAFAFA]">
                             <!-- picture 영역 padding 적용 -->
                             <div class="px-6 py-5">
-                                <div class="font-bold text-xl mb-3">판매중인 상품</div>
+                                <div class="font-bold text-xl mb-3">방명록</div>
                                 
                             </div>
                         </div>
@@ -86,6 +99,5 @@
 
     </div>
 </body>
-
 
 </html>
