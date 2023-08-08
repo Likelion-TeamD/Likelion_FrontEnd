@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var id = ['#home', '#guest', '#sale']
+  var id = ['#home', '#sale', '#guest']
 
   // Get the current URL
   const currentUrl = window.location.pathname;
@@ -7,11 +7,11 @@ $(document).ready(function () {
   // Highlight the current page in the navbar
 
   
-  if (currentUrl === '/index.html') {
+  if (currentUrl === '/index.html' || currentUrl === '/') {
     changeColor(id[0])
-  }else if (currentUrl === '/pages/guest.html') {
+  }else if (currentUrl === '/pages/sale.html' || currentUrl === '/pages/sale') {
     changeColor(id[1])
-  }else if (currentUrl === '/pages/sale.html') {
+  }else if (currentUrl === '/pages/guest.html' || currentUrl === '/pages/guest') {
     changeColor(id[2])
   }
   
