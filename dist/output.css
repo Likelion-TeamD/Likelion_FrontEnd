@@ -567,13 +567,13 @@ body {
   height: 100vh;
   margin: 0 auto;
   font-family: "Pretendard-Regular";
-  background: linear-gradient(#f6f6f6, #d3deda);
+  background: linear-gradient(#DBE0DE, #D3DEDA);
 }
 
 .content {
   /* overflow-y: hidden; */
   /* height: 100%; */
-
+  
   position: relative;
   padding: 31px 0;
   /* height: calc(100vh - var(--navbar-height)); */
