@@ -17,28 +17,28 @@ $(document).ready(function () {
     // $("#text_farm").text("new text");
     text.text("i");
 
-    // // post
-    // $.ajax({
-    //     url: 'https://ad38-115-94-178-52.ngrok-free.app/farmin/posts/',
-    //     type: 'POST',
-    //     data: {
-    //         "id": "",
-    //         "title": text.text(),
-    //         "content": "a",
-    //         "create_date": getCurrentTime(),
-    //         "modify_date": null,
-    //         "author": 1,
-    //         "like": [
-    //             1
-    //         ],
-    //         "Post_pic": []
-    //     },
+    // post
+    $.ajax({
+        url: 'https://4a5b-115-94-178-52.ngrok-free.app/farmin/posts/',
+        type: 'POST',
+        data: {
+            "id": "",
+            "title": text.text(),
+            "content": "a",
+            "create_date": getCurrentTime(),
+            "modify_date": null,
+            "author": 1,
+            "like": [
+                1
+            ],
+            "Post_pic": []
+        },
 
-    // }).then((data, textStatus, jqXHR) => {
-    //     console.log(data);
-    // }, (jqXHR, textStatus, errorThrown) => {
-    //     /*pass*/
-    // })
+    }).then((data, textStatus, jqXHR) => {
+        console.log(data);
+    }, (jqXHR, textStatus, errorThrown) => {
+        /*pass*/
+    })
 
 
 
@@ -61,14 +61,14 @@ $(document).ready(function () {
 
     // GET 요청을 사용하여 데이터 가져오기
     $.ajax({
-        url: 'https://ad38-115-94-178-52.ngrok-free.app/farmin/list/',
+        url: ' https://4a5b-115-94-178-52.ngrok-free.app/farmin/list/',
         type: 'GET',
         dataType: 'json', // 응답 데이터 타입을 JSON으로 설정
     }).then((data, textStatus, jqXHR) => {
         // 성공적으로 데이터를 받아온 경우 실행되는 부분
 
         // id가 10인 객체의 title 찾아서 출력
-        const itemWithId10 = data.find(item => item.id === 10);
+        const itemWithId10 = data.find(item => item.id === 0);
         if (itemWithId10) {
             const title = itemWithId10.title;
             console.log('Title for id 10:', title);
