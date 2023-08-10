@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     // GET 요청을 사용하여 데이터 가져오기
     $.ajax({
-        url: 'https://c03e-115-94-178-52.ngrok-free.app/farmin/list/',
+        url: 'https://e709-115-94-178-52.ngrok-free.app/farmin/list/',
         type: 'GET',
         dataType: 'json', // 응답 데이터 타입을 JSON으로 설정
         headers: {
