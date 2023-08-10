@@ -64,6 +64,10 @@ $(document).ready(function () {
         url: ' https://4a5b-115-94-178-52.ngrok-free.app/farmin/list/',
         type: 'GET',
         dataType: 'json', // 응답 데이터 타입을 JSON으로 설정
+        headers: {
+            'Access-Control-Allow-Origin': '*', // 또는 허용하려는 도메인을 지정
+            // 더 필요한 헤더 설정
+          }
     }).then((data, textStatus, jqXHR) => {
         // 성공적으로 데이터를 받아온 경우 실행되는 부분
 
