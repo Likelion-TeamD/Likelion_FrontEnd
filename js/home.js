@@ -61,11 +61,16 @@ $(document).ready(function () {
 
     // GET 요청을 사용하여 데이터 가져오기
     $.ajax({
-        url: 'https://7b4f-115-94-178-52.ngrok-free.app/farmin/list/',
+        url: 'https://c03e-115-94-178-52.ngrok-free.app/farmin/list/',
         type: 'GET',
         dataType: 'json', // 응답 데이터 타입을 JSON으로 설정
         headers: {
             'Access-Control-Allow-Origin': '*', // 또는 허용하려는 도메인을 지정
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+
             // 더 필요한 헤더 설정
         }
     }).then((data, textStatus, jqXHR) => {
